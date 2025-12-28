@@ -6,8 +6,10 @@
   "type": "module",
   "exports": {
     ".": "./src/index.js",
-    "./vite": "./src/vite-plugin.js"
+    "./vite": "./src/vite-plugin.js",
+    "./package.json": "./package.json"
   },
+  "sideEffects": false,
   "files": [
     "src",
     "nativescript.vite.mjs"

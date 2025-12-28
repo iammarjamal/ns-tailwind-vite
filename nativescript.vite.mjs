@@ -5,10 +5,10 @@
  * by NativeScript's Vite plugin.
  */
 
-import nativescriptTailwind from "@nativescript/tailwind";
+import nativescriptTailwind from "ns-tailwind-vite";
 
 export default () => {
   return {
-    plugins: [nativescriptTailwind()],
+    plugins: [...nativescriptTailwind()],
   };
 };

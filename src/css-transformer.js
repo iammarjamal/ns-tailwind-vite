@@ -5,7 +5,9 @@
  * This is a pure JavaScript implementation without PostCSS dependency.
  */
 
-import { parseSingle, serialize } from "@hookun/parse-animation-shorthand";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const { parseSingle, serialize } = require("@hookun/parse-animation-shorthand");
 
 const remRE = /(\d*\.?\d+)\s*r?em/g;
 
