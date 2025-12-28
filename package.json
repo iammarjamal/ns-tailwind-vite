@@ -1,0 +1,60 @@
+{
+  "name": "ns-tailwind-vite",
+  "version": "5.0.0",
+  "description": "TailwindCSS v4 for NativeScript with Vite support",
+  "main": "src/index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./vite": "./src/vite-plugin.js"
+  },
+  "files": [
+    "src",
+    "nativescript.vite.mjs"
+  ],
+  "repository": "https://github.com/iammarjamal/ns-tailwind-vite",
+  "keywords": [
+    "nativescript",
+    "nativescript-vue",
+    "nativescript-theme",
+    "theme",
+    "tailwind",
+    "tailwindcss",
+    "styling",
+    "css",
+    "vite"
+  ],
+  "author": "Ammar Jamal",
+  "contributors": [
+    {
+      "name": "Rqeim Team",
+      "email": "hi@rqeim.com"
+    }
+  ],
+  "nativescript": {
+    "platforms": {
+      "android": "*",
+      "ios": "*"
+    },
+    "plugin": {
+      "nan": "true",
+      "pan": "true",
+      "core3": "true",
+      "vue": "true",
+      "category": "Developer"
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "@hookun/parse-animation-shorthand": "^0.1.4",
+    "@tailwindcss/vite": "^4.0.0"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^4.0.0",
+    "vite": "^5.0.0 || ^6.0.0"
+  }
+}
